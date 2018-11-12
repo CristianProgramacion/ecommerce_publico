@@ -1,3 +1,4 @@
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyA85ZXnoExIaF0gGen-6QlQYGsQ0G8VYpk",
@@ -8,7 +9,6 @@
     messagingSenderId: "920899480980"
   };
   firebase.initializeApp(config);
-
 
   function IngresoGoogle(){
     if (!firebase.auth().currentUser) {
@@ -51,7 +51,7 @@
         var correo = result.user.email;
         var foto = result.user.photoURL;
         var red = 'Facebook';
-        location.href = 'login/index.php?name=' + name + '&correo=' + correo + '&foto=' + foto + '&red=' + red;
+        location.href='login/index.php?name=' + name + '&correo=' + correo + '&foto=' + foto + '&red=' + red;
       }).catch(function(error){
         var errorCode = error.code;
         if (errorCode === 'auth/account-exist-with-diferent-credential') {
