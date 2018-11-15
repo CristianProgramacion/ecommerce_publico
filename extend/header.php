@@ -47,7 +47,7 @@
                  <img src="<?php echo $_SESSION['foto_user'] ?>"  widht="50" height="50" class="rounded-circle">
              </a>
              <div class="dropdown-menu" aria-labelleby="perfil">
-                   <a href="#" class="dropdown-item">Deseos</a>
+                   <a href="deseos.php" class="dropdown-item">Deseos</a>
                    <a href="#" class="dropdown-item">Compras</a>
                    <a href="#" class="dropdown-item" id="logout">Salir</a>
 
